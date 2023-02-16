@@ -6,6 +6,91 @@
   font-family: 'Lato', sans-serif;
 }
 
+/* --------------navbar------------------------------------------------------------ */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+/*.partsection img {
+  width: 0.1rem;
+  height: 0.01rem;
+}*/
+
+.navbar .logo img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 10rem;
+  padding: 0.5rem 0;
+}
+
+.navbar .logo {
+  display: none;
+}
+
+.navbar .menuitems {
+  width: 100%;
+  height: auto;
+  margin-right: 10rem;
+  z-index: 1;
+}
+
+.navbar .menuitems .menuList {
+  display: none;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+}
+
+.navbar .menuitems .menuList li {
+  list-style: none;
+  margin-left: 3rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar .menuitems .menuList li a {
+  color: #272a31;
+  text-decoration: none;
+}
+
+.navbar .menuitems .menuList .participate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ec5242;
+  border: 4px solid #ec5242;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 8rem;
+}
+
+.navbar .menuitems .menuList .participate a {
+  color: #ec5242;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar .menuitems .menuList li a:not(.participate a):hover {
+  color: #ec5242;
+}
+
+.navbar .humbergar {
+  width: 100%;
+  height: auto;
+  background-color: #aaabaf;
+  padding: 0 2rem;
+  margin-top: 4rem;
+  font-size: 4rem;
+  color: #272a31;
+  position: fixed;
+  z-index: 1;
+}
+
 /* -------------------------- hero section of about page------------------------------------------ */
 .heroabout {
   background-image: url('./images/bgimg2.jpg');
@@ -108,6 +193,18 @@ p {
 
 /* -----------------------------------css for bigger screens--------------------------------------- */
 @media only screen and (min-width: 768px) {
+  
+  /* ----------------- navbar----------------------------------- */
+  .navbar .menuitems .menuList {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+  }
+
+  /* ------------------herosection------------------------------ */
   .heroaboutlist {
     display: inline-flex;
     flex-direction: column;

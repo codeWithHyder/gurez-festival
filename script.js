@@ -51,8 +51,6 @@ const participations = [
 sectionDiv.innerHTML = `<h3 class="committee">COMMITTEE</h3>
                         <hr class='hr'>`;
 // variable declaration
-const eleP = document.createElement('P');
-// looping through each array of objects
 for (let i = 0; i < participations.length; i += 1) {
   if (i < 2) {
     sectionDiv.innerHTML += `<div class = 'partsection'>
@@ -63,24 +61,11 @@ for (let i = 0; i < participations.length; i += 1) {
     <p class="desig">${participations[i].desig}</p>
     <p>${participations[i].desc}</p>
     </div>`;
-  } else {
-    eleP.addEventListener('click', () => {
-      eleP.style.display = 'none';
-      for (let j = 2; j < participations.length; j += 1) {
-        sectionDiv.innerHTML += `<div class = 'partsection'>
-    <div class="digimg"><img src="${participations[j].img}"></div>
-    <div class="digdesc">
-    <h3>${participations[j].name}</h3>
-    <p class="desig">${participations[j].desig}</p>
-    <p>${participations[j].desc}</p>
-    </div>`;
-      }
-    });
-  }
+  } 
 }
 
-// create more button
-
+//create more button and attach eventlistener to it
+const eleP = document.createElement('P');
 eleP.innerHTML = 'MORE  <i class="fa-sharp fa-solid fa-angle-down"></i>';
 sectionDiv.appendChild(eleP);
 eleP.style.border = '4px solid #f1f2f1';
@@ -90,34 +75,15 @@ eleP.style.margin = '0 1rem 1rem 1rem';
 eleP.style.textAlign = 'center';
 eleP.style.padding = '0.5rem';
 eleP.style.cursor = 'pointer';
-
-// dislay popupmenu on clicking hamburger icon
-const popupMenu = document.querySelector('.menuList');
-const participate = document.querySelector('.participate');
-const hamburger = document.querySelector('.humbergar');
-const heroSection = document.querySelector('#herosection');
-
-function displayPopup() {
-  popupMenu.style.display = 'flex';
-  popupMenu.style.flexDirection = 'column';
-  popupMenu.style.justifyContent = 'flex-Start';
-  popupMenu.style.alignItems = 'start';
-  popupMenu.style.fontSize = '2em';
-  popupMenu.style.fontFamily = '"Lato", sans-serif';
-  popupMenu.style.fontWeight = '400';
-  popupMenu.style.width = '100%';
-  popupMenu.style.height = '30rem';
-  popupMenu.style.background = '#f2f2f2';
-  popupMenu.style.top = 0;
-  popupMenu.style.left = 0;
-  popupMenu.style.position = 'absolute';
-  participate.style.border = '4px solid #ec5242';
-  popupMenu.style.rowGap = '1.5rem';
-  hamburger.style.position = 'absolute';
-}
-
-// close popup menu
-function closePopup() {
-  popupMenu.style.display = 'none';
-  hamburger.style.position = 'fixed';
-}
+eleP.addEventListener('click', () => {
+  eleP.style.display = 'none';
+  for (let j = 2; j < participations.length; j += 1) {
+    sectionDiv.innerHTML += `<div class = 'partsection'>
+<div class="digimg"><img src="${participations[j].img}"></div>
+<div class="digdesc">
+<h3>${participations[j].name}</h3>
+<p class="desig">${participations[j].desig}</p>
+<p>${participations[j].desc}</p>
+</div>`;
+  }
+});
