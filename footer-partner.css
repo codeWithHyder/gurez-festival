@@ -1,0 +1,53 @@
+/* ------------------------- partners section --------------------------------- */
+.partnersection {
+  background-color: #282831;
+}
+
+.partnersection h3 {
+  text-align: center;
+  color: #d3d3d3;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.partnersection ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  list-style: none;
+}
+
+.partnersection ul li img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 0.5rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------- footer section------------------------------------ */
+.footer {
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0 1rem;
+}
+
+.footer img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+/* --------------- css for bigger screens------------------------------------------------- */
+@media only screen and (min-width:768px){
+  .partnersection ul {
+    display: inline-flex;
+    justify-content: center;
+  }  
+}
