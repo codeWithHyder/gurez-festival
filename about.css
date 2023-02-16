@@ -16,10 +16,10 @@
   background-color: rgb(255, 255, 255);
 }
 
-/*.partsection img {
+/* .partsection img {
   width: 0.1rem;
   height: 0.01rem;
-}*/
+} */
 
 .navbar .logo img {
   width: 4rem;
@@ -193,7 +193,6 @@ p {
 
 /* -----------------------------------css for bigger screens--------------------------------------- */
 @media only screen and (min-width: 768px) {
-  
   /* ----------------- navbar----------------------------------- */
   .navbar .menuitems .menuList {
     display: flex;

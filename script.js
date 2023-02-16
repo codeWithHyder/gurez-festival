@@ -61,10 +61,10 @@ for (let i = 0; i < participations.length; i += 1) {
     <p class="desig">${participations[i].desig}</p>
     <p>${participations[i].desc}</p>
     </div>`;
-  } 
+  }
 }
 
-//create more button and attach eventlistener to it
+// create more button and attach eventlistener to it
 const eleP = document.createElement('P');
 eleP.innerHTML = 'MORE  <i class="fa-sharp fa-solid fa-angle-down"></i>';
 sectionDiv.appendChild(eleP);
