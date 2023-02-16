@@ -82,7 +82,7 @@ multiple departments take part in the festivals to showcase their skills, produc
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://codewithhyder.github.io/gurez-festival/)
 
 - [Watch Presentation]()
 
