@@ -47,7 +47,7 @@ p {
 .heroaboutlist li .festdetail {
   background-color: #fff;
   border: 1px solid #807b7b;
-  font-size: 1em; 
+  font-size: 1em;
   padding: 0.2em;
   margin-bottom: 2em;
 }
@@ -107,7 +107,7 @@ p {
 }
 
 /* -----------------------------------css for bigger screens--------------------------------------- */
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   .heroaboutlist {
     display: inline-flex;
     flex-direction: column;
