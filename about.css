@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
+
 /* -------------------------- hero section of about page------------------------------------------ */
 .heroabout {
   background-image: url('./images/bgimg2.jpg');
@@ -30,6 +31,12 @@
 
 .heroaboutlist li h4 {
   color: #ec5242;
+}
+
+.imgtext h1,
+p {
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .heroaboutlist li h1 {
@@ -99,20 +106,13 @@
   margin: 1rem;
 }
 
-.imgtext h1,
-p {
-  text-align: center;
-  margin: 2rem 0;
-}
-
 /* -----------------------------------css for bigger screens--------------------------------------- */
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px) {
   .heroaboutlist {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 10rem;
-    
   }
 
   .heroaboutlist li .festdetail {
