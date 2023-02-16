@@ -1,29 +1,29 @@
 // dislay popupmenu on clicking hamburger icon
-const popupMenu = document.querySelector('.menuList');
-const participate = document.querySelector('.participate');
-const hamburger = document.querySelector('.humbergar');
-const heroSection = document.querySelector('#herosection');
+const popupMenu1 = document.querySelector('.menuList');
+const participate1 = document.querySelector('.participate');
+const hamburger1 = document.querySelector('.humbergar');
+const heroSection1 = document.querySelector('#herosection');
 function displayPopup() {
-  popupMenu.style.display = 'flex';
-  popupMenu.style.flexDirection = 'column';
-  popupMenu.style.justifyContent = 'flex-Start';
-  popupMenu.style.alignItems = 'start';
-  popupMenu.style.fontSize = '2em';
-  popupMenu.style.fontFamily = '"Lato", sans-serif';
-  popupMenu.style.fontWeight = '400';
-  popupMenu.style.width = '100%';
-  popupMenu.style.height = '30rem';
-  popupMenu.style.background = '#f2f2f2';
-  popupMenu.style.top = 0;
-  popupMenu.style.left = 0;
-  popupMenu.style.position = 'absolute';
-  participate.style.border = '4px solid #ec5242';
-  popupMenu.style.rowGap = '1.5rem';
-  hamburger.style.position = 'absolute';
+  popupMenu1.style.display = 'flex';
+  popupMenu1.style.flexDirection = 'column';
+  popupMenu1.style.justifyContent = 'flex-Start';
+  popupMenu1.style.alignItems = 'start';
+  popupMenu1.style.fontSize = '2em';
+  popupMenu1.style.fontFamily = '"Lato", sans-serif';
+  popupMenu1.style.fontWeight = '400';
+  popupMenu1.style.width = '100%';
+  popupMenu1.style.height = '30rem';
+  popupMenu1.style.background = '#f2f2f2';
+  popupMenu1.style.top = 0;
+  popupMenu1.style.left = 0;
+  popupMenu1.style.position = 'absolute';
+  participate1.style.border = '4px solid #ec5242';
+  popupMenu1.style.rowGap = '1.5rem';
+  hamburger1.style.position = 'absolute';
 }
 
 // close popup menu
 function closePopup() {
-  popupMenu.style.display = 'none';
-  hamburger.style.position = 'fixed';
+  popupMenu1.style.display = 'none';
+  hamburger1.style.position = 'fixed';
 }
