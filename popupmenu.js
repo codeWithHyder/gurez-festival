@@ -1,15 +1,10 @@
-// import google font lato
-"@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');"
-
 // dislay popupmenu on clicking hamburger icon
+const popupMenu = document.querySelector('.menuList');
+const participate = document.querySelector('.participate');
+const hamburger = document.querySelector('.humbergar');
+const heroSection = document.querySelector('.herosection');
 
-let popupMenu = document.querySelector('.menuList');
-let participate = document.querySelector('.participate');
-let hamburger = document.querySelector('.humbergar')
-let heroSection = document.querySelector('#herosection');
-function displayPopup(){
-  // console.log("click try");
-    
+function displayPopup() {
   popupMenu.style.display = 'flex';
   popupMenu.style.flexDirection = 'column';
   popupMenu.style.justifyContent = 'flex-Start';
@@ -26,11 +21,10 @@ function displayPopup(){
   participate.style.border = '4px solid #ec5242';
   popupMenu.style.rowGap = '1.5rem';
   hamburger.style.position = 'absolute';
-  popupMenu.focus();
 }
 
-// close popup menu
-function closePopup(){
+// close popup menu on clicking cross icon
+function closePopup() {
   popupMenu.style.display = 'none';
   hamburger.style.position = 'fixed';
 }
