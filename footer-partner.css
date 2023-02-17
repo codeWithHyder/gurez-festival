@@ -1,6 +1,11 @@
 /* ------------------------- partners section --------------------------------- */
 .partnersection {
   background-color: #282831;
+  width: 96%;
+  height: 50%;
+  margin-top: 0.5em;
+  margin-left: 1rem;
+  margin-right: 2rem;
 }
 
 .partnersection h3 {

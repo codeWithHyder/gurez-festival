@@ -54,12 +54,12 @@ sectionDiv.innerHTML = `<h3 class="committee">COMMITTEE</h3>
 for (let i = 0; i < participations.length; i += 1) {
   if (i < 2) {
     sectionDiv.innerHTML += `<div class = 'partsection'>
-            
     <div class="digimg"><img src="${participations[i].img}"></div>
     <div class="digdesc">
     <h3>${participations[i].name}</h3>
     <p class="desig">${participations[i].desig}</p>
     <p>${participations[i].desc}</p>
+    </div>
     </div>`;
   }
 }
@@ -84,6 +84,7 @@ eleP.addEventListener('click', () => {
 <h3>${participations[j].name}</h3>
 <p class="desig">${participations[j].desig}</p>
 <p>${participations[j].desc}</p>
+</div>
 </div>`;
   }
 });

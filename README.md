@@ -84,7 +84,7 @@ multiple departments take part in the festivals to showcase their skills, produc
 
 - [Live Demo Link](https://codewithhyder.github.io/gurez-festival/)
 
-- [Watch Presentation](https://www.loom.com/share/954565bd249a4b27b918eedb441eba61)
+- [Watch Presentation](https://www.loom.com/share/29fc797e7c634409972faaacaa4ec0c5)
 
 
 
